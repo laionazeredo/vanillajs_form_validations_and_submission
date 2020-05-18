@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EloGroup - Como nos conheceu?</title>
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Hero section-->
+    <section class="hero is-medium is-warning is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    <strong>EloGroup - Como nos conheceu?</strong>
+                </h1>
+                <h2 class="subtitle">
+                    Que tal falar um pouco sobre como chegou até nós?
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main page container-->
+    <div class="container is-fluid" style="padding-bottom: 50px;">
+
+        <!--Main form-->
+        <form method="POST" class="form" id="contact-form">
+            <div class="field" style="padding-top: 50px; " style="padding-bottom: 50px;">
+                <div class="control">
+
+                    <!--Nome-->
+                    <input class="input is-medium is-rounded" id="name" onkeyup="validateName()" type="text" placeholder="Digite teu nome e sobrenome" required>
+                    <p class="help is-danger" id="name-error-prompt"></p>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+
+                    <!--Telefone-->
+                    <input class="input is-medium is-rounded" id="phone" onkeyup="validatePhone()" type="text" placeholder="Digite teu telefone somente com digitos. Ex: 11 - 99999999" required>
+                    <p class="help is-danger " id="phone-error-prompt"></p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="whereyoufrom" class="label">Como nos conheceu?</label>
+                <div class="control">
+
+                    <!--Como nos conheceu-->
+                    <div class="select is-rounded is-fullwidth" id="whereyoufrom">
+                        <select id="whereyoufrom-select">
+                            <option value="TV">TV</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+
+                <!--Você tem rede social?-->
+                <label for="social" class="label">Você tem rede social?</label>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" id="social" name="social" value="1" onchange="hideSocialMedia(this.value)" checked>                            
+                            Sim
+                        </label>
+                    <label class="radio">
+                        <input type="radio" id="social" name="social" value="0" onchange="hideSocialMedia(this.value)">
+                            Não
+                    </label>
+                </div>
+            </div>
+
+            <div class="field " id="ithassocial">
+                <label class="label ">Nos diga quais redes você tem. Pode escolher mais de uma</label>
+                <div class="control ">
+
+                    <!--Perfis Sociais-->
+                    <label class="checkbox">
+                        <input type="checkbox" id="spfacebook"  name="socialprofiles" value="Facebook"> 
+                            <span class="icon is-large ">
+                                <i class="fa fa-facebook "></i>
+                            </span>
+                            <span>
+                                Facebook 
+                            </span>
+                    </label></br>
+                    <label class="checkbox">
+                        <input type="checkbox" id="splinkedin" name="socialprofiles" value="Linkedin" > 
+                            <span class="icon is-large">
+                                <i class="fa fa-linkedin"></i>
+                            </span>
+                            <span>
+                                Linkedin 
+                            </span>
+                    </label></br>
+                    <label class="checkbox ">
+                        <input type="checkbox" id="spinstagram"  name="socialprofiles" value="Instagram"> 
+                            <span class="icon is-large">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                            <span>
+                                Instagram 
+                            </span>
+                    </label>
+
+                </div>
+            </div>
+
+            <!--botão de finalização-->
+            <input class="button is-rounded is-success is-fullwidth " id="send-btn" onClick="onSubmitRoutine()" type="button" name="send" value="Enviar">
+
+            <!--Mensagem de agradecimento-->
+            <div class="notification is-warning" id="msg-post-submit" hidden>
+                <button class="delete"></button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+<!--Rodapé-->
+<footer class="footer ">
+    <div class="container ">
+        <div class="content has-text-centered ">
+            <p>
+                <strong>Created with Bulma</strong> by <a href="https://github.com/laionazeredo ">Laion Azeredo</a>. The source code of Bulma is licensed
+                <a href="http://opensource.org/licenses/mit-license.php ">MIT</a>. The website content is licensed <a href="https://www.gnu.org/licenses/gpl-3.0.html ">GNU LESSER GENERAL PUBLIC LICENSE V3</a>.
+            </p>
+            <p>
+                <a class="icon " href="https://github.com/laionazeredo ">
+                    <i class="fa fa-github "></i>
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script type="text/javascript " src="scripts.js "></script>
+
+</html>
