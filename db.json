@@ -9,20 +9,6 @@
       "perfissocial": [
         "Facebook"
       ]
-    },
-    [
-      {
-        "id": 1584314653971,
-        "nome": "Teste Elo Group",
-        "telefone": "11 - 999999999",
-        "origemcontato": "TV",
-        "tenmidiasocial": "1",
-        "perfissocial": [
-          "Facebook",
-          "Linkedin",
-          "Instagram"
-        ]
-      }
-    ]
+    }    
   ]
 }

@@ -1,10 +1,10 @@
-# laionazeredo_elogroup_form_validation_with_js_test
- Build a validation form with HTML5 and JS validation loop and CSS provided by Bulma
+# __laionazeredo__ vanillajs_form_validations_and_submission
+ This project demonstrate a form submission page that validates name and phone accordinly a defined pattern and sends the submission to a backend DB via JSON API.
 ![Representação da Página](/assets/final_result.png)
 
- ## Estrututra do projeto
+ ## Directory Tree
 ```
-laionazeredo_elogroup_form_validation_with_js_test              //
+vanillajs_form_validations_and_submission           //
 ├─ .git                                                         //
 ├─ .gitattributes                                               //
 ├─ .gitignore                                                   //
@@ -20,12 +20,9 @@ laionazeredo_elogroup_form_validation_with_js_test              //
   
 ```
 
- ## Nome no Processo Seletivo
- Laion Azeredo (laion.azeredo@gmail.com)
-
- ## Frameworks e demais códigos usados
- A maior parte do trabalho é feita usando js puro. Para o estilo, usei o framework css Bulma.
+## Frameworks and packages used
+The majority of code base is in vanilla JS. For styling, I used Bulma CSS Framework.
 
 
- ## Teste da API
- Em caso de querer testar a api desenvolvida, sugiro utilizar o json-server (pode ser encontrado via NPM) e usar o comando "json-server -p 8080 db.json" para subir o servidor. Após isso, basta entrar na url  http://localhost:8080/formsubmissions
+## API Test
+In case you want to test the developed api, I suggest using the json-server (can be found via NPM) and use the command "json-server -p 8080 db.json" to start the server. After that, just enter the url http://localhost:8080/formsubmissions

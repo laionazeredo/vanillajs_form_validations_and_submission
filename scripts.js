@@ -3,17 +3,16 @@ function produceMessage(message, elementlocation) {
     document.getElementById(elementlocation).innerHTML = message;
 }
 
-
 //Validating Name - Needs to be filled and have at least one surname
 function validateName() {
     var name = document.getElementById("name").value;
 
     if (name.length == 0) {
-        produceMessage("Dica: O nome é obrigatório", "name-error-prompt");
+        produceMessage("Hint: The name is required.", "name-error-prompt");
         return false;
     }
     if (!name.match(/^(\D)*\s{1}/)) {
-        produceMessage("Dica: É necessário preencher nome e sobrenome", "name-error-prompt");
+        produceMessage("Hint: A surname is required alongside the name", "name-error-prompt");
         return false;
     }
     produceMessage("", "name-error-prompt");
@@ -25,17 +24,16 @@ function validatePhone() {
     var phone = document.getElementById("phone").value;
 
     if (phone.length == 0) {
-        produceMessage("Dica: O número de telefone deve ter 11 dígitos", "phone-error-prompt");
+        produceMessage("Hint: Phone number needs to have 11 digits", "phone-error-prompt");
         return false;
     }
     if (!phone.match(/(^\d{2})\s\-\s(\d){9}$/)) {
-        produceMessage("Dica: O número de telefone deve ter 11 dígitos, com o DDD separado do número por um traço e espaços, como neste exemplo: 11 - 999999999", "phone-error-prompt");
+        produceMessage("Hint: Phone number needs to have 11 digits, with area code (of 2 digits) separated by the core number by an hifen and spaces, like in this example: 11 - 999999999", "phone-error-prompt");
         return false;
     }
     produceMessage("", "phone-error-prompt");
     return true;
 }
-
 
 //Hidding social media if user don't have one
 function hideSocialMedia(state) {
@@ -48,8 +46,6 @@ function hideSocialMedia(state) {
         document.getElementById("ithassocial").style.display = "block";
     }
 }
-
-
 
 //Submit Form as Json
 
@@ -64,14 +60,14 @@ const addData = () => {
             socialprofilesvalues.push(item.value);
         }
     }
-    // JSON file example: id:' ' , nome: 'José', telefone: '11 - 999999999', origemcontato: 'TV', tenmidiasocial: 'Sim', perfissociai: {'Facebook, Instagram}
+    // JSON file example: id:' ' , name: 'José', phone: '11 - 999999999', contactsource: 'TV', gotsocial: 'Sim', socialprofile: {'Facebook, Instagram}
     let formfield = {
         id: Date.now(),
-        nome: document.getElementById("name").value,
-        telefone: document.getElementById("phone").value,
-        origemcontato: document.getElementById("whereyoufrom-select").value,
-        tenmidiasocial: document.getElementById("social").value,
-        perfissocial: socialprofilesvalues
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        contactsource: document.getElementById("whereyoufrom-select").value,
+        gotsocial: document.getElementById("social").value,
+        socialprofile: socialprofilesvalues
     }
 
     formfields.push(formfield); // Bulds the base array to JSON file generation    
@@ -108,8 +104,8 @@ function onSubmitRoutine() {
         // Display thankyou box after submission
         document.getElementById("msg-post-submit").style.display = "block";
         // HDisplay thankyou message after submission
-        document.getElementById("msg-post-submit").innerHTML = "Obrigado por enviar as informações. Trataremos com o maior carinho."
+        document.getElementById("msg-post-submit").innerHTML = "Thank you for sharing. We will make contact soon."
     } else {
-        alert("Verifique os campos preenchidos. Possivelmente há erros.") // Warns about validation issues
+        alert("Check the fields. Possibly you got some errors.") // Warns about validation issues
     }
 }

@@ -5,21 +5,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EloGroup - Como nos conheceu?</title>
+    <title>DeathEgg Team is Hiring!</title>
+    <link rel="icon" href="assets/182-1829926_dr-eggman-logo (100x69).png">
     <link rel="stylesheet" href="styles/mystyles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!--Hero section-->
-    <section class="hero is-medium is-warning is-bold">
+    <section class="hero is-medium is-dark is-bold">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    <strong>EloGroup - Como nos conheceu?</strong>
+                    <span><img src="assets/182-1829926_dr-eggman-logo (100x69).png"></span>
+                    <p><strong>DeathEgg Team is Hiring!</strong></p>
                 </h1>
-                <h2 class="subtitle">
-                    Que tal falar um pouco sobre como chegou até nós?
+                <h2 class="subtitle">                    
+                    <p>What about to help the most advanced mind in the Universe to aquire the Chaos Emeralds and conquer the world?</p>
+                    <p>This is your opportunity to made difference.</p>
                 </h2>
             </div>
         </div>
@@ -34,7 +37,7 @@
                 <div class="control">
 
                     <!--Nome-->
-                    <input class="input is-medium is-rounded" id="name" onkeyup="validateName()" type="text" placeholder="Digite teu nome e sobrenome" required>
+                    <input class="input is-medium is-rounded" id="name" onkeyup="validateName()" type="text" placeholder="Your first and last name" required>
                     <p class="help is-danger" id="name-error-prompt"></p>
                 </div>
             </div>
@@ -43,13 +46,13 @@
                 <div class="control">
 
                     <!--Telefone-->
-                    <input class="input is-medium is-rounded" id="phone" onkeyup="validatePhone()" type="text" placeholder="Digite teu telefone somente com digitos. Ex: 11 - 99999999" required>
+                    <input class="input is-medium is-rounded" id="phone" onkeyup="validatePhone()" type="text" placeholder="Your phone (only numbers). Ex: 11 - 99999999" required>
                     <p class="help is-danger " id="phone-error-prompt"></p>
                 </div>
             </div>
 
             <div class="field">
-                <label for="whereyoufrom" class="label">Como nos conheceu?</label>
+                <label for="whereyoufrom" class="label">How did you meet us?</label>
                 <div class="control">
 
                     <!--Como nos conheceu-->
@@ -57,7 +60,7 @@
                         <select id="whereyoufrom-select">
                             <option value="TV">TV</option>
                             <option value="Internet">Internet</option>
-                            <option value="Outros">Outros</option>
+                            <option value="Sega Genesis">Sega Genesis</option>
                         </select>
                     </div>
                 </div>
@@ -66,21 +69,21 @@
             <div class="field">
 
                 <!--Você tem rede social?-->
-                <label for="social" class="label">Você tem rede social?</label>
+                <label for="social" class="label">Do you have any social media account?</label>
                 <div class="control">
                     <label class="radio">
                         <input type="radio" id="social" name="social" value="1" onchange="hideSocialMedia(this.value)" checked>                            
-                            Sim
+                            Sure! I am not a caveperson.
                         </label>
                     <label class="radio">
                         <input type="radio" id="social" name="social" value="0" onchange="hideSocialMedia(this.value)">
-                            Não
+                            No. I don't want to be hacked by people like you!
                     </label>
                 </div>
             </div>
 
             <div class="field " id="ithassocial">
-                <label class="label ">Nos diga quais redes você tem. Pode escolher mais de uma</label>
+                <label class="label ">Say which of the following do you have to allow us to <del>hack</del> contact you.</label>
                 <div class="control ">
 
                     <!--Perfis Sociais-->
@@ -116,7 +119,7 @@
             </div>
 
             <!--botão de finalização-->
-            <input class="button is-rounded is-success is-fullwidth " id="send-btn" onClick="onSubmitRoutine()" type="button" name="send" value="Enviar">
+            <input class="button is-rounded is-dark is-fullwidth " id="send-btn" onClick="onSubmitRoutine()" type="button" name="send" value="Enviar">
 
             <!--Mensagem de agradecimento-->
             <div class="notification is-warning" id="msg-post-submit" hidden>
@@ -133,6 +136,7 @@
     <div class="container ">
         <div class="content has-text-centered ">
             <p>
+                <p>Dr. Eggman's logo is from <a href="https://www.nicepng.com/ourpic/u2w7q8r5u2q8o0e6_dr-eggman-logo/">Nice PNG</a> website</p>
                 <strong>Created with Bulma</strong> by <a href="https://github.com/laionazeredo ">Laion Azeredo</a>. The source code of Bulma is licensed
                 <a href="http://opensource.org/licenses/mit-license.php ">MIT</a>. The website content is licensed <a href="https://www.gnu.org/licenses/gpl-3.0.html ">GNU LESSER GENERAL PUBLIC LICENSE V3</a>.
             </p>

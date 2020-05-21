@@ -1,7 +1,7 @@
 {
-    "name": "laionazeredo_elogroup_form_validation_with_js",
-    "version": "1.1.0",
-    "description": "Build a validation form with HTML5 and JS validation loop and CSS provided by Bulma",
+    "name": "vanillajs_form_validations_and_submission",
+    "version": "1.0.0",
+    "description": "Building a validation form with HTML5 and JS validation loop and CSS provided by Bulma",
     "main": "styles/mystyles.scss",
     "dependencies": {},
     "devDependencies": {
@@ -16,7 +16,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/laionazeredo/laionazeredo_elogroup_form_validation_with_js_test.git"
+        "url": "git+https://github.com/laionazeredo/vanillajs_form_validations_and_submission.git"
     },
     "keywords": [
         "bulma",
@@ -26,7 +26,7 @@
     "author": "laionazeredo",
     "license": "GPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/laionazeredo/laionazeredo_elogroup_form_validation_with_js_test/issues"
+        "url": "https://github.com/laionazeredo/vanillajs_form_validations_and_submission/issues"
     },
-    "homepage": "https://github.com/laionazeredo/laionazeredo_elogroup_form_validation_with_js_test#readme"
+    "homepage": "https://github.com/laionazeredo/vanillajs_form_validations_and_submission#readme"
 }
