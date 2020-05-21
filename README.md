@@ -1,6 +1,6 @@
 # __laionazeredo__ vanillajs_form_validations_and_submission
  This project demonstrate a form submission page that validates name and phone accordinly a defined pattern and sends the submission to a backend DB via JSON API.
-![Representação da Página](/assets/final_result.png)
+![Representação da Página](/assets/final_result_page.png)
 
  ## Directory Tree
 ```
